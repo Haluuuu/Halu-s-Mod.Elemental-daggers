@@ -1,0 +1,31 @@
+{
+  "ApplicationEffects": {
+    "EntityBottomTint": "#000000",
+    "EntityTopTint": "#008000",
+    "EntityAnimationId": "Hurt",
+    "WorldSoundEventId": "SFX_Effect_Poison_World",
+    "LocalSoundEventId": "SFX_Effect_Poison_Local",
+    "Particles": [
+      {
+        "SystemId": "Effect_Poison"
+      }
+    ]
+  },
+  "DamageCalculatorCooldown": 3,
+  "DamageCalculator": {
+    "BaseDamage": {
+      "Poison": 30
+    },
+    "Type": "Absolute"
+  },
+  "DamageEffects": {
+    "WorldSoundEventId": "SFX_Effect_Poison_World",
+    "PlayerSoundEventId": "SFX_Effect_Poison_Local"
+  },
+  "Infinite": false,
+  "Debuff": true,
+  "StatusEffectIcon": "UI/StatusEffects/Poison.png",
+  "Duration": 6,
+  "ValueType": "Percent",
+  "Invulnerable": false
+}

@@ -113,6 +113,11 @@
             "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
             "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
           }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Poison_Daggers_Charged_Fail",
+          "Entity": "Target"
         }
       ]
     },
@@ -135,6 +140,11 @@
             "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
             "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
           }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Poison_Daggers_Charged",
+          "Entity": "Target"
         }
       ]
     },
@@ -152,6 +162,11 @@
             "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
             "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
           }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Poison_Daggers_Special",
+          "Entity": "Target"
         }
       ]
     },
@@ -169,6 +184,11 @@
             "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
             "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
           }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Poison_Daggers_Special",
+          "Entity": "Target"
         }
       ]
     },
@@ -186,6 +206,11 @@
             "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
             "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
           }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Poison_Daggers_Special",
+          "Entity": "Target"
         }
       ]
     }
