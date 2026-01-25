@@ -1,0 +1,20 @@
+{
+  "Group": "Halu´s Mod",
+  "Name": "Elemental daggers",
+  "Version": "1.0.0",
+  "Description": "",
+  "Authors": [
+    {
+      "Name": "Halugamer",
+      "Email": "Hrldrmnd@gmail.com",
+      "Url": ""
+    }
+  ],
+  "Website": "",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}
