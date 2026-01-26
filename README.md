@@ -57,6 +57,15 @@ This ensures that **every attack type** consistently reflects the poison element
 | Pounce (Charged) | 29.5 – 37       |
 | Razorstrike      | 17.5 – 26       |
 
+### 📊 Poison Damage Summary
+
+| Attack Type       | Poison / Tick | Duration | Total Poison Damage | Behavior |
+| ----------------- | ------------- | -------- | ------------------- | -------- |
+| Normal / Stab     | 10            | 8s       | 20                  | Extend   |
+| Charged (Success) | 30            | 6s       | 60                  | Refresh  |
+| Charged (Fail)    | 20            | 6s       | 40                  | Refresh  |
+| Razorstrike       | 20            | 8s       | 40                  | Extend   |
+
 ### ☠️ Applied Effects
 
 * `Poison_Daggers_Hit` → Normal swings and stabs
