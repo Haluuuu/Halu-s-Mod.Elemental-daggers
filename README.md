@@ -63,14 +63,14 @@ This ensures that **every attack type** consistently reflects the poison element
 | ----------------- | ------------- | -------- | ------------------- | -------- |
 | Normal / Stab     | 10            | 8s       | 20                  | Extend   |
 | Charged (Success) | 30            | 6s       | 60                  | Refresh  |
-| Charged (Fail)    | 20            | 6s       | 40                  | Refresh  |
+| Charged Stab      | 20            | 6s       | 40                  | Refresh  |
 | Razorstrike       | 20            | 8s       | 40                  | Extend   |
 
 ### ☠️ Applied Effects
 
 * `Poison_Daggers_Hit` → Normal swings and stabs
 * `Poison_Daggers_Charged` → Successful charged attack
-* `Poison_Daggers_Charged_Fail` → Failed charged attack
+* `Poison_Daggers_Charged_Fail` → Successful charged stab attack
 * `Poison_Daggers_Special` → Razorstrike ability
 
 ### 🎨 Visual Effects
