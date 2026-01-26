@@ -35,7 +35,7 @@
           }
         },
         "Opacity": 1,
-        "Color": "#1c0083"
+        "Color": "#0a8730"
       },
       "30": {
         "Scale": {
@@ -49,11 +49,11 @@
           }
         },
         "Opacity": 1.0,
-        "Color": "#ff0000"
+        "Color": "#00ff17"
       },
       "100": {
         "Opacity": 0.7,
-        "Color": "#ff0000"
+        "Color": "#00a304"
       }
     },
     "InitialAnimationFrame": {

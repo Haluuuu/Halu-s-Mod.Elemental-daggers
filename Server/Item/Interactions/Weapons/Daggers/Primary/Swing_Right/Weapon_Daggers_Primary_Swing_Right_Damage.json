@@ -18,7 +18,7 @@
         "Style": "Linear"
       },
       "Force": 2,
-      "VelocityType": "Set",
+      "VelocityType": "Add",
       "Direction": {
         "X": 0,
         "Y": 1,
@@ -60,7 +60,7 @@
         },
         "WorldParticles": [
           {
-            "SystemId": "Impact_Critical_Poison",
+            "SystemId": "Impact_Critical",
             "Scale": 1,
             "RotationOffset": {
               "Yaw": 180,

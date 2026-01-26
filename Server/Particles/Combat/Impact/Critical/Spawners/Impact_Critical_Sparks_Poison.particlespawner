@@ -40,10 +40,11 @@
             "Max": 2
           }
         },
-        "Color": "#ffffff"
+        "Color": "#00ff1e"
       },
       "10": {
-        "Opacity": 1
+        "Opacity": 1,
+        "Color": "#bcff0e"
       },
       "40": {
         "Color": "#26ed2b"
