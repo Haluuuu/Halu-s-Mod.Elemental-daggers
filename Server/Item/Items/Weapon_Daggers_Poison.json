@@ -3,12 +3,13 @@
   "TranslationProperties": {
     "Name": "server.items.Weapon_Daggers_Bone.name"
   },
-  "Model": "NPC/Intelligent/Feran/Models/Weapons/Dagger/Bone.blockymodel",
-  "Texture": "NPC/Intelligent/Feran/Models/Weapons/Dagger/Bone_Texture.png",
+  "Model": "Items/Weapons/Dagger/Dagger_Poison.blockymodel",
+  "Texture": "Items/Weapons/Dagger/Texture_Dagger_Poison.png",
   "Icon": "Icons/ItemsGenerated/Weapon_Daggers_Poison.png",
-  "Quality": "Rare",
+  "Quality": "Epic",
   "ItemLevel": 35,
-  "MaxDurability": 250,
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.1,
   "InteractionVars": {
     "Swing_Left_Damage": {
       "Interactions": [
@@ -16,7 +17,7 @@
           "Parent": "Weapon_Daggers_Primary_Swing_Left_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 1.5
+              "Physical": 2
             }
           },
           "DamageEffects": {
@@ -58,7 +59,7 @@
           "Parent": "Weapon_Daggers_Primary_Stab_Left_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 4
+              "Physical": 6
             }
           },
           "DamageEffects": {
@@ -79,7 +80,7 @@
           "Parent": "Weapon_Daggers_Primary_Stab_Right_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 5
+              "Physical": 8
             }
           },
           "DamageEffects": {
@@ -100,7 +101,7 @@
           "Parent": "Weapon_Daggers_Primary_Pounce_Sweep_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 17.5
+              "Physical": 29.5
             }
           },
           "EntityStatsOnHit": [
@@ -127,7 +128,7 @@
           "Parent": "Weapon_Daggers_Primary_Pounce_Stab_Damage",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 22
+              "Physical": 37
             }
           },
           "EntityStatsOnHit": [
@@ -218,13 +219,13 @@
   "IconProperties": {
     "Scale": 0.58823,
     "Rotation": [
-      313,
-      272,
+      134,
+      260,
       0
     ],
     "Translation": [
-      -19,
-      -23
+      21,
+      18
     ]
   },
   "Particles": [
@@ -261,5 +262,35 @@
       },
       "FixedRotation": false
     }
-  ]
+  ],
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Thorium",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Sac_Venom",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Ingredient_Bone_Fragment",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Wood_Poisoned_Trunk",
+        "Quantity": 2
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Weapon_Bench",
+        "RequiredTierLevel": 2,
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Daggers"
+        ]
+      }
+    ]
+  }
 }
