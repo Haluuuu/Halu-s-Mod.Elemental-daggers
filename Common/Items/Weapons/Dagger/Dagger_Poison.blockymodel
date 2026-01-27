@@ -453,11 +453,11 @@
                             {
                               "id": "12",
                               "name": "Blade2",
-                              "position": {"x": 13.49489, "y": 0.74571, "z": 0.03002},
+                              "position": {"x": 13.49489, "y": 0.7457, "z": 0.03001},
                               "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                               "shape": {
                                 "type": "box",
-                                "offset": {"x": -1.99489, "y": -0.74571, "z": -0.03002},
+                                "offset": {"x": -1.99489, "y": -0.7457, "z": -0.03001},
                                 "stretch": {"x": 1, "y": 1, "z": 1},
                                 "settings": {
                                   "isPiece": false,
@@ -499,20 +499,20 @@
                                 {
                                   "id": "13",
                                   "name": "Blade3",
-                                  "position": {"x": 15.98978, "y": 1.49141, "z": 0.06003},
+                                  "position": {"x": 15.98979, "y": 1.49141, "z": 0.06003},
                                   "orientation": {"x": 0, "y": 0, "z": 0, "w": 1},
                                   "shape": {
                                     "type": "quad",
-                                    "offset": {"x": -6.98978, "y": 0.50859, "z": -0.06003},
+                                    "offset": {"x": -6.98979, "y": 1.00859, "z": -0.06003},
                                     "stretch": {"x": 1, "y": 1, "z": 0.1},
                                     "settings": {
                                       "isPiece": false,
-                                      "size": {"x": 11, "y": 14},
+                                      "size": {"x": 11, "y": 15},
                                       "normal": "+Z"
                                     },
                                     "textureLayout": {
                                       "front": {
-                                        "offset": {"x": 21, "y": 3},
+                                        "offset": {"x": 21, "y": 2},
                                         "mirror": {"x": false, "y": false},
                                         "angle": 0
                                       }
