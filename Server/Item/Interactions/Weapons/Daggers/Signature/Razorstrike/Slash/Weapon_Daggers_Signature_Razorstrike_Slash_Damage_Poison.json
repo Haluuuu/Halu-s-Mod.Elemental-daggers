@@ -1,7 +1,7 @@
 {
   "Parent": "DamageEntityParent",
   "DamageCalculator": {
-    "Class": "Light"
+    "Class": "Signature"
   },
   "Effects": {
     "CameraEffect": "Impact"
@@ -17,12 +17,12 @@
         "Threshold": 3.0,
         "Style": "Linear"
       },
-      "Force": 2,
+      "Force": 7,
       "VelocityType": "Add",
       "Direction": {
         "X": 0,
         "Y": 1,
-        "Z": -1
+        "Z": -2
       }
     },
     "WorldParticles": [
@@ -38,12 +38,7 @@
     ],
     "CameraEffect": "Impact_Light"
   },
-  "EntityStatsOnHit": [
-    {
-      "EntityStatId": "SignatureEnergy",
-      "Amount": 1
-    }
-  ],
+  "EntityStatsOnHit": [],
   "AngledDamage": [
     {
       "Angle": 180,
@@ -53,14 +48,23 @@
           "Direction": {
             "X": 0,
             "Y": 1,
-            "Z": -1
+            "Z": -2
           },
           "Type": "Force",
-          "Force": 1
+          "Force": 7,
+          "VelocityType": "Add",
+          "VelocityConfig": {
+            "AirResistance": 0.99,
+            "AirResistanceMax": 0.98,
+            "GroundResistance": 0.94,
+            "GroundResistanceMax": 0.3,
+            "Threshold": 3.0,
+            "Style": "Linear"
+          }
         },
         "WorldParticles": [
           {
-            "SystemId": "Impact_Critical_Poison",
+            "SystemId": "Impact_Critical",
             "Scale": 1,
             "RotationOffset": {
               "Yaw": 180,

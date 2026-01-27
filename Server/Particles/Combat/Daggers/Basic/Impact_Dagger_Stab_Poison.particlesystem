@@ -1,0 +1,18 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Impact_Dagger_Slash_Poison"
+    },
+    {
+      "SpawnerId": "Impact_Dagger_Sparks_Poison"
+    },
+    {
+      "SpawnerId": "Impact_Dagger_Sparks_Thin_Poison",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Impact_Dagger_Stab_Sparks_Poison"
+    }
+  ],
+  "IsImportant": false
+}

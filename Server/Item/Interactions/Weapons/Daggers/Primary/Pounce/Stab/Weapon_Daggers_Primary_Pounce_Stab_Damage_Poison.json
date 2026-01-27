@@ -1,7 +1,7 @@
 {
   "Parent": "DamageEntityParent",
   "DamageCalculator": {
-    "Class": "Light"
+    "Class": "Charged"
   },
   "Effects": {
     "CameraEffect": "Impact"
@@ -17,17 +17,17 @@
         "Threshold": 3.0,
         "Style": "Linear"
       },
-      "Force": 2,
-      "VelocityType": "Add",
+      "Force": 5,
+      "VelocityType": "Set",
       "Direction": {
         "X": 0,
         "Y": 1,
-        "Z": -1
+        "Z": -2
       }
     },
     "WorldParticles": [
       {
-        "SystemId": "Impact_Dagger_Slash_Poison",
+        "SystemId": "Impact_Dagger_Stab_Charged_Poison",
         "Scale": 1,
         "RotationOffset": {
           "Yaw": 180,
@@ -41,7 +41,7 @@
   "EntityStatsOnHit": [
     {
       "EntityStatId": "SignatureEnergy",
-      "Amount": 1
+      "Amount": 6
     }
   ],
   "AngledDamage": [
@@ -53,10 +53,19 @@
           "Direction": {
             "X": 0,
             "Y": 1,
-            "Z": -1
+            "Z": -2
           },
           "Type": "Force",
-          "Force": 1
+          "Force": 5,
+          "VelocityType": "Set",
+          "VelocityConfig": {
+            "AirResistance": 0.99,
+            "AirResistanceMax": 0.98,
+            "GroundResistance": 0.94,
+            "GroundResistanceMax": 0.3,
+            "Threshold": 3.0,
+            "Style": "Linear"
+          }
         },
         "WorldParticles": [
           {
@@ -69,8 +78,8 @@
             }
           }
         ],
-        "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
-        "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
+        "WorldSoundEventId": "SFX_Daggers_T2_Stab_Impact",
+        "LocalSoundEventId": "SFX_Daggers_T2_Stab_Impact"
       }
     }
   ]
