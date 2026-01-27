@@ -98,7 +98,7 @@
     "Pounce_Sweep_Damage": {
       "Interactions": [
         {
-          "Parent": "Weapon_Daggers_Primary_Pounce_Sweep_Damage",
+          "Parent": "Weapon_Daggers_Primary_Pounce_Sweep_Damage_Poison",
           "DamageCalculator": {
             "BaseDamage": {
               "Physical": 29.5
@@ -125,7 +125,7 @@
     "Pounce_Stab_Damage": {
       "Interactions": [
         {
-          "Parent": "Weapon_Daggers_Primary_Pounce_Stab_Damage",
+          "Parent": "Weapon_Daggers_Primary_Pounce_Stab_Damage_Poison",
           "DamageCalculator": {
             "BaseDamage": {
               "Physical": 37
