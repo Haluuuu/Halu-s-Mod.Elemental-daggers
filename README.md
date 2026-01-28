@@ -1,54 +1,59 @@
 # 🗡️ Elemental Daggers Mod
 
-A **Hytale** mod that introduces **elemental daggers**, starting with a **Poison Dagger** that applies elemental effects directly on normal attacks.
+A **Hytale** mod that introduces **elemental daggers**, each infused with a unique elemental power that enhances fast-paced, close-range combat through status effects, visuals, and elemental damage.
 
-> ⚠️ **Project status:** First public release available on GitHub (v1.0.0)
+> ⚠️ **Project status:** Public release available on GitHub
+> Current version includes **Poison** and **Flame** daggers.
 
 ---
 
 ## ✨ Features
 
-* 🗡️ New **Poison elemental dagger**
-* ☠️ Damage-over-time poison effect applied on every hit
+* 🗡️ New **elemental daggers**
+* ☠️ Poison and 🔥 Fire elemental effects applied on hit
+* Damage-over-time and burn mechanics
 * Built on Hytale’s official dagger weapon templates
 * Compatible with quality, level, and durability systems
-* Structured to easily add more elemental daggers in future updates
+* Designed to scale easily with future elemental additions
 
 ---
 
-## 🔥 Included Elements (v1.0)
+## 🔥 Included Elements (v1.1.0)
 
-Currently, the mod includes **one elemental dagger**:
+The mod currently includes **two elemental daggers**:
 
-* ☠️ **Poison** – Applies damage over time to enemies on hit
+* ☠️ **Poison** – Applies poison damage over time on hit
+* 🔥 **Flame** – Inflicts burn effects and fire-based damage
 
-> Additional elements are **planned for future versions**.
+> Additional elements are planned for future versions.
 
 ---
 
 ## 🧩 How It Works
 
-The **Poison Dagger** uses Hytale’s `InteractionVars` system to apply poison effects across multiple attack types.
+Each dagger uses Hytale’s `InteractionVars` system to apply elemental effects consistently across all attack types.
 
-The poison effect is applied on:
+Elemental effects are applied on:
 
 * Normal swings (left & right)
 * Stab attacks
 * Charged attacks (Pounce)
 * Signature ability **Razorstrike**
 
-This ensures that **every attack type** consistently reflects the poison element.
+This ensures that **every combat action reflects the selected element**.
 
 ---
 
-## 🧪 Poison Dagger – Technical Details
+# ☠️ Poison Dagger – Technical Details
 
 **Quality:** Epic
 **Item Level:** 35
 **Max Durability:** 150
 **Durability loss per hit:** 0.1
 
-### ⚔️ Base Damage
+---
+
+### ⚔️ Base Physical Damage
 
 | Attack Type      | Physical Damage |
 | ---------------- | --------------- |
@@ -57,33 +62,94 @@ This ensures that **every attack type** consistently reflects the poison element
 | Pounce (Charged) | 29.5 – 37       |
 | Razorstrike      | 17.5 – 26       |
 
+---
+
 ### 📊 Poison Damage Summary
 
 | Attack Type       | Poison / Tick | Duration | Total Poison Damage | Behavior |
 | ----------------- | ------------- | -------- | ------------------- | -------- |
 | Normal / Stab     | 10            | 8s       | 20                  | Extend   |
 | Charged (Success) | 30            | 6s       | 60                  | Refresh  |
-| Charged Stab      | 20            | 6s       | 40                  | Refresh  |
+| Charged Fail      | 20            | 6s       | 40                  | Refresh  |
 | Razorstrike       | 20            | 8s       | 40                  | Extend   |
+
+---
 
 ### ☠️ Applied Effects
 
-* `Poison_Daggers_Hit` → Normal swings and stabs
-* `Poison_Daggers_Charged` → Successful charged attack
-* `Poison_Daggers_Charged_Fail` → Successful charged stab attack
-* `Poison_Daggers_Special` → Razorstrike ability
+* `Poison_Daggers_Hit` – Normal swings and stabs
+* `Poison_Daggers_Charged` – Successful charged attack
+* `Poison_Daggers_Charged_Fail` – Failed charged stab
+* `Poison_Daggers_Special` – Razorstrike ability
+
+---
 
 ### 🎨 Visual Effects
 
-* Poison particle effect while idle
-* Green weapon trail using *BlendAdd* render mode
+* Idle poison particle effects
+* Green energy weapon trail (*BlendAdd*)
 * Subtle green light emission
 
-### 🛠️ Crafting Recipe
+---
 
-**Required Bench:** Weapon Bench (Tier 2)
+# 🔥 Flame Dagger – Technical Details
 
-**Materials:**
+**Quality:** Epic
+**Item Level:** 35
+**Max Durability:** 150
+**Durability loss per hit:** 0.1
+
+---
+
+### ⚔️ Base Damage
+
+| Attack Type      | Damage Type | Damage    |
+| ---------------- | ----------- | --------- |
+| Normal Swing     | Fire        | 2         |
+| Stab             | Physical    | 6 – 8     |
+| Pounce (Charged) | Physical    | 29.5 – 37 |
+| Razorstrike      | Physical    | 17.5 – 26 |
+
+---
+
+### 🔥 Burn Damage Summary
+
+| Attack Type   | Fire / Tick | Tick Rate | Duration | Total Fire Damage | Behavior |
+| ------------- | ----------- | --------- | -------- | ----------------- | -------- |
+| Normal / Stab | 5           | 1s        | 2s       | 10                | Extend   |
+| Charged Sweep | 17.5        | 1s        | 1s       | 17.5              | Extend   |
+| Charged Stab  | 20          | 0.5s      | 1s       | 40                | Extend   |
+| Razorstrike   | 25          | 0.5s      | 1s       | 50                | Extend   |
+
+> Burn effects stack by **extending duration**, rewarding aggressive and continuous attacks.
+
+---
+
+### 🔥 Applied Burn Effects
+
+* `Flame_Staff_Burn_Hit` – Normal swings and stab attacks
+* `Flame_Staff_Burn_Charged_Slash` – Charged sweep attack
+* `Flame_Staff_Burn_Charged` – Charged stab attack
+* `Flame_Staff_Burn_Special` – Razorstrike ability
+
+---
+
+### 🎨 Visual & Feedback Effects
+
+* Fire screen overlay on affected targets
+* Red-orange entity tint while burning
+* Continuous fire particle emission
+* Flame weapon trail (*BlendAdd*)
+* Fire burst particles on impact
+* Burn status icon displayed on affected enemies
+
+---
+
+## 🛠️ Crafting Recipes
+
+### ☠️ Poison Dagger
+
+**Weapon Bench:** Tier 2
 
 * Thorium Bar ×3
 * Venom Sac ×15
@@ -92,12 +158,23 @@ This ensures that **every attack type** consistently reflects the poison element
 
 ---
 
+### 🔥 Flame Dagger
+
+**Weapon Bench:** Tier 2
+
+* Thorium Bar ×3
+* Ruby Gem ×5
+* Fire Essence ×15
+* Fire Trunk ×2
+
+---
+
 ## 🚀 Installation
 
 1. Clone or download the repository from GitHub
 2. Copy the mod folder into Hytale’s mods directory
 3. Launch the game
-4. Ensure the mod is enabled
+4. Enable the mod in the mod menu
 
 ---
 
@@ -110,22 +187,20 @@ This ensures that **every attack type** consistently reflects the poison element
 ## 📌 Roadmap
 
 * [x] Poison elemental dagger
-* [ ] Fire daggers
+* [x] Flame elemental dagger
 * [ ] Ice daggers
-* [ ] Lightning daggers
-* [ ] Damage balancing
-* [ ] Custom visual effects
+* [ ] Elemental balance pass
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome!
+Community feedback is welcome and appreciated!
 
-* New elemental ideas
-* Damage balancing
-* Visual effects improvements
-* Code and interaction optimizations
+* Element suggestions
+* Balance feedback
+* Visual and particle improvements
+* Code optimizations
 
 Feel free to open an **Issue** or submit a **Pull Request**.
 
@@ -133,7 +208,7 @@ Feel free to open an **Issue** or submit a **Pull Request**.
 
 ## 📜 License
 
-This project is released under an open license for use and modification.
+Released under an open license for learning, modification, and community use.
 
 ---
 
@@ -142,7 +217,7 @@ This project is released under an open license for use and modification.
 **Halugamer**
 Creator of *Halu’s Mod – Elemental Daggers*
 
-📧 Contact: [Harold.Herrera2375@gmial.com](mailto:Harold.Herrera2375@gmial.com)
+📧 Contact: [Harold.Herrera2375@gmail.com](mailto:Harold.Herrera2375@gmail.com)
 
 ---
 
