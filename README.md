@@ -18,7 +18,7 @@ A **Hytale** mod that introduces **elemental daggers**, each infused with a uniq
 
 ---
 
-## 🔥 Included Elements (v1.1.0)
+## 🔥 Included Elements (v1.1.2)
 
 The mod currently includes **two elemental daggers**:
 
