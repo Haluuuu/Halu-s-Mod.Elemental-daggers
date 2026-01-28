@@ -155,6 +155,7 @@ This ensures that **every combat action reflects the selected element**.
 * Venom Sac ×15
 * Bone Fragment ×15
 * Poisoned Trunk ×2
+* Emerald Gem ×1
 
 ---
 
@@ -162,7 +163,7 @@ This ensures that **every combat action reflects the selected element**.
 
 **Weapon Bench:** Tier 2
 
-* Thorium Bar ×3
+* Adamantite Bar ×3
 * Ruby Gem ×5
 * Fire Essence ×15
 * Fire Trunk ×2
