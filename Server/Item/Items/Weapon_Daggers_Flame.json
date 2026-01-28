@@ -256,15 +256,15 @@
         "Quantity": 3
       },
       {
-        "ItemId": "Ingredient_Sac_Venom",
+        "ItemId": "Rock_Gem_Ruby",
+        "Quantity": 5
+      },
+      {
+        "ItemId": "Ingredient_Fire_Essence",
         "Quantity": 15
       },
       {
-        "ItemId": "Ingredient_Bone_Fragment",
-        "Quantity": 15
-      },
-      {
-        "ItemId": "Wood_Poisoned_Trunk",
+        "ItemId": "Wood_Fire_Trunk",
         "Quantity": 2
       }
     ],
