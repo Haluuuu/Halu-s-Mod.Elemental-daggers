@@ -1,0 +1,18 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Impact_Dagger_Slash_Flame"
+    },
+    {
+      "SpawnerId": "Impact_Dagger_Sparks_Flame"
+    },
+    {
+      "SpawnerId": "Impact_Dagger_Sparks_Thin_Flame",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Impact_Dagger_Stab_Sparks_Flame"
+    }
+  ],
+  "IsImportant": false
+}

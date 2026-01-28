@@ -1,0 +1,21 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Impact_Critical_Flash_Flame",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Impact_Critical_Sparks_Flame",
+      "StartDelay": 0.01
+    },
+    {
+      "SpawnerId": "Impact_Critical_Sparks_Flame",
+      "StartDelay": 0.01
+    },
+    {
+      "SpawnerId": "Impact_Critical_Sparks_Flame_Small",
+      "StartDelay": 0.02
+    }
+  ],
+  "IsImportant": false
+}

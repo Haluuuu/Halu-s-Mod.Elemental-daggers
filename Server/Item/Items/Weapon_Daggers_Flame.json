@@ -14,7 +14,7 @@
     "Swing_Left_Damage": {
       "Interactions": [
         {
-          "Parent": "Weapon_Daggers_Primary_Swing_Left_Damage",
+          "Parent": "Weapon_Daggers_Primary_Swing_Left_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
               "Fire": 2
@@ -35,7 +35,7 @@
     "Swing_Right_Damage": {
       "Interactions": [
         {
-          "Parent": "Weapon_Daggers_Primary_Swing_Right_Damage",
+          "Parent": "Weapon_Daggers_Primary_Swing_Right_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
               "Physical": 2
@@ -56,7 +56,7 @@
     "Stab_Left_Damage": {
       "Interactions": [
         {
-          "Parent": "Weapon_Daggers_Primary_Stab_Left_Damage_Poison",
+          "Parent": "Weapon_Daggers_Primary_Swing_Right_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
               "Physical": 6
@@ -77,7 +77,7 @@
     "Stab_Right_Damage": {
       "Interactions": [
         {
-          "Parent": "Weapon_Daggers_Primary_Stab_Right_Damage_Poison",
+          "Parent": "Weapon_Daggers_Primary_Swing_Right_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
               "Physical": 8
@@ -98,7 +98,7 @@
     "Pounce_Sweep_Damage": {
       "Interactions": [
         {
-          "Parent": "Weapon_Daggers_Primary_Pounce_Sweep_Damage_Poison",
+          "Parent": "Weapon_Daggers_Primary_Pounce_Sweep_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
               "Physical": 29.5
@@ -125,7 +125,7 @@
     "Pounce_Stab_Damage": {
       "Interactions": [
         {
-          "Parent": "Weapon_Daggers_Primary_Pounce_Stab_Damage_Poison",
+          "Parent": "Weapon_Daggers_Primary_Pounce_Stab_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
               "Physical": 37
@@ -152,7 +152,7 @@
     "Razorstrike_Slash_Damage": {
       "Interactions": [
         {
-          "Parent": "Weapon_Daggers_Signature_Razorstrike_Slash_Damage_Poison",
+          "Parent": "Weapon_Daggers_Primary_Swing_Right_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
               "Physical": 17.5
@@ -174,7 +174,7 @@
     "Razorstrike_Sweep_Damage": {
       "Interactions": [
         {
-          "Parent": "Weapon_Daggers_Signature_Razorstrike_Sweep_Damage_Poison",
+          "Parent": "Weapon_Daggers_Primary_Swing_Right_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
               "Physical": 22
@@ -196,7 +196,7 @@
     "Razorstrike_Lunge_Damage": {
       "Interactions": [
         {
-          "Parent": "Weapon_Daggers_Signature_Razorstrike_Lunge_Damage_Poison",
+          "Parent": "Weapon_Daggers_Primary_Swing_Right_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
               "Physical": 26

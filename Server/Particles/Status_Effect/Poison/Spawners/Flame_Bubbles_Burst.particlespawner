@@ -22,12 +22,12 @@
   "TrailSpawnerRotationMultiplier": 1,
   "MaxConcurrentParticles": 200,
   "ParticleLifeSpan": {
-    "Min": 0.43,
+    "Min": 0.417,
     "Max": 0.5
   },
   "SpawnRate": {
-    "Min": 45,
-    "Max": 60
+    "Min": 12,
+    "Max": 15
   },
   "InitialVelocity": {
     "Speed": {
@@ -99,7 +99,8 @@
             "Min": 0,
             "Max": 0
           }
-        }
+        },
+        "Color": "#ffa1a1"
       }
     },
     "InitialAnimationFrame": {
@@ -119,12 +120,12 @@
       },
       "Scale": {
         "X": {
-          "Min": 0.05,
-          "Max": 0.2
+          "Min": 0.1,
+          "Max": 0.3
         },
         "Y": {
-          "Min": 0.05,
-          "Max": 0.2
+          "Min": 0.1,
+          "Max": 0.3
         }
       },
       "Opacity": 1,
@@ -140,5 +141,6 @@
     "Min": 50,
     "Max": 50
   },
-  "SpawnBurst": true
+  "SpawnBurst": true,
+  "Shape": "Sphere"
 }

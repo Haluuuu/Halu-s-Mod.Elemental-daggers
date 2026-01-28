@@ -164,5 +164,6 @@
         "Max": 0
       }
     }
-  }
+  },
+  "SpawnBurst": true
 }
