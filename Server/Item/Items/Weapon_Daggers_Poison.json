@@ -280,6 +280,9 @@
       {
         "ItemId": "Wood_Poisoned_Trunk",
         "Quantity": 2
+      },
+      {
+        "ItemId": "Rock_Gem_Emerald"
       }
     ],
     "BenchRequirement": [

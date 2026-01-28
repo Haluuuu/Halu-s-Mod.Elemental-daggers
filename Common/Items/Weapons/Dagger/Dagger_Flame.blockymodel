@@ -269,22 +269,22 @@
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 1, "y": 18},
+                                "offset": {"x": 9, "y": 27},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 90
                               },
                               "right": {
-                                "offset": {"x": 1, "y": 18},
+                                "offset": {"x": 10, "y": 27},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 90
                               },
                               "front": {
-                                "offset": {"x": 1, "y": 21},
+                                "offset": {"x": 9, "y": 30},
                                 "mirror": {"x": false, "y": true},
                                 "angle": 270
                               },
                               "left": {
-                                "offset": {"x": 1, "y": 18},
+                                "offset": {"x": 11, "y": 27},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 90
                               },
@@ -321,22 +321,22 @@
                             },
                             "textureLayout": {
                               "back": {
-                                "offset": {"x": 1, "y": 18},
+                                "offset": {"x": 11, "y": 27},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 90
                               },
                               "right": {
-                                "offset": {"x": 1, "y": 18},
+                                "offset": {"x": 11, "y": 27},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 90
                               },
                               "front": {
-                                "offset": {"x": 1, "y": 21},
+                                "offset": {"x": 10, "y": 30},
                                 "mirror": {"x": false, "y": true},
                                 "angle": 270
                               },
                               "left": {
-                                "offset": {"x": 1, "y": 18},
+                                "offset": {"x": 9, "y": 27},
                                 "mirror": {"x": false, "y": false},
                                 "angle": 90
                               },
