@@ -1,0 +1,14 @@
+{
+  "TexturePath": "Trails/Acid.png",
+  "LifeSpan": 4,
+  "Roll": 0,
+  "Start": {
+    "Width": 0.5
+  },
+  "End": {
+    "Width": 0.0
+  },
+  "LightInfluence": 0.288,
+  "Smooth": true,
+  "RenderMode": "BlendAdd"
+}

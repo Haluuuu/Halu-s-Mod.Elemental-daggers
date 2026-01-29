@@ -1,0 +1,289 @@
+{
+  "Parent": "Template_Weapon_Daggers",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Daggers_Poison.name"
+  },
+  "Model": "Items/Weapons/Dagger/Dagger_Ice.blockymodel",
+  "Texture": "Items/Weapons/Dagger/Texture_Dagger_Ice.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Daggers_Ice.png",
+  "Quality": "Epic",
+  "ItemLevel": 35,
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.1,
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Daggers_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 2
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
+            "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Ice_Daggers_Hit",
+          "Entity": "Target"
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Daggers_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 2
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
+            "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Ice_Daggers_Hit",
+          "Entity": "Target"
+        }
+      ]
+    },
+    "Stab_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Daggers_Primary_Stab_Left_Damage_Poison",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 6
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
+            "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Ice_Daggers_Hit",
+          "Entity": "Target"
+        }
+      ]
+    },
+    "Stab_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Daggers_Primary_Stab_Right_Damage_Poison",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 8
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
+            "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Ice_Daggers_Hit",
+          "Entity": "Target"
+        }
+      ]
+    },
+    "Pounce_Sweep_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Daggers_Primary_Pounce_Sweep_Damage_Poison",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 29.5
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 1
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
+            "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Ice_Daggers_Charged",
+          "Entity": "Target"
+        }
+      ]
+    },
+    "Pounce_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Daggers_Primary_Pounce_Stab_Damage_Poison",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 37
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 6
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
+            "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Ice_Daggers_Charged",
+          "Entity": "Target"
+        }
+      ]
+    },
+    "Razorstrike_Slash_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Daggers_Signature_Razorstrike_Slash_Damage_Poison",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 17.5
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
+            "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Ice_Daggers_Special",
+          "Entity": "Target"
+        }
+      ]
+    },
+    "Razorstrike_Sweep_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Daggers_Signature_Razorstrike_Sweep_Damage_Poison",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 22
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
+            "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Ice_Daggers_Special",
+          "Entity": "Target"
+        }
+      ]
+    },
+    "Razorstrike_Lunge_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Daggers_Signature_Razorstrike_Lunge_Damage_Poison",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 26
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
+            "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Ice_Daggers_Special",
+          "Entity": "Target"
+        }
+      ]
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      134,
+      277,
+      0
+    ],
+    "Translation": [
+      24,
+      22
+    ]
+  },
+  "Light": {
+    "Color": "#0fe",
+    "Radius": 1
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Thorium",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Sac_Venom",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Ingredient_Bone_Fragment",
+        "Quantity": 15
+      },
+      {
+        "ItemId": "Wood_Poisoned_Trunk",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Rock_Gem_Emerald"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Weapon_Bench",
+        "RequiredTierLevel": 2,
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Daggers"
+        ]
+      }
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "IceDagger",
+      "PositionOffset": {
+        "Y": 0.3
+      }
+    },
+    {
+      "SystemId": "Weapon_Daggers_Ice_Burst"
+    }
+  ],
+  "Trails": [
+    {
+      "TrailId": "Medium_Frost",
+      "FixedRotation": false,
+      "TargetEntityPart": "Self",
+      "PositionOffset": {
+        "Y": 0.3
+      }
+    }
+  ]
+}
