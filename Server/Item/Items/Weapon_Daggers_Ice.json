@@ -1,7 +1,7 @@
 {
   "Parent": "Template_Weapon_Daggers",
   "TranslationProperties": {
-    "Name": "server.items.Weapon_Daggers_Poison.name"
+    "Name": "server.items.Weapon_Daggers_Ice.name"
   },
   "Model": "Items/Weapons/Dagger/Dagger_Ice.blockymodel",
   "Texture": "Items/Weapons/Dagger/Texture_Dagger_Ice.png",
