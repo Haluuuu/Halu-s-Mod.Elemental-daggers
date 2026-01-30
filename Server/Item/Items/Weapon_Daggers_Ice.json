@@ -235,23 +235,19 @@
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Thorium",
+        "ItemId": "Ingredient_Bar_Cobalt",
         "Quantity": 3
       },
       {
-        "ItemId": "Ingredient_Sac_Venom",
+        "ItemId": "Ingredient_Ice_Essence",
         "Quantity": 15
       },
       {
-        "ItemId": "Ingredient_Bone_Fragment",
-        "Quantity": 15
-      },
-      {
-        "ItemId": "Wood_Poisoned_Trunk",
+        "ItemId": "Wood_Ice_Trunk",
         "Quantity": 2
       },
       {
-        "ItemId": "Rock_Gem_Emerald"
+        "ItemId": "Rock_Gem_Diamond"
       }
     ],
     "BenchRequirement": [
