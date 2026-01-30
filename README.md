@@ -1,31 +1,35 @@
+
+---
+
 # 🗡️ Elemental Daggers Mod
 
 A **Hytale** mod that introduces **elemental daggers**, each infused with a unique elemental power that enhances fast-paced, close-range combat through status effects, visuals, and elemental damage.
 
 > ⚠️ **Project status:** Public release available on GitHub
-> Current version includes **Poison** and **Flame** daggers.
+> Current version includes **Poison**, **Flame**, and **Ice** daggers.
 
 ---
 
 ## ✨ Features
 
 * 🗡️ New **elemental daggers**
-* ☠️ Poison and 🔥 Fire elemental effects applied on hit
-* Damage-over-time and burn mechanics
+* ☠️ Poison, 🔥 Fire, and ❄️ Ice elemental effects applied on hit
+* Damage-over-time, burn, and slow/freeze mechanics
 * Built on Hytale’s official dagger weapon templates
 * Compatible with quality, level, and durability systems
 * Designed to scale easily with future elemental additions
 
 ---
 
-## 🔥 Included Elements (v1.1.2)
+## 🔥 Included Elements (v1.3.0)
 
-The mod currently includes **two elemental daggers**:
+The mod currently includes **three elemental daggers**:
 
-* ☠️ **Poison** – Applies poison damage over time on hit
-* 🔥 **Flame** – Inflicts burn effects and fire-based damage
+* ☠️ **Poison** – Applies poison damage over time
+* 🔥 **Flame** – Inflicts burn effects and fire damage
+* ❄️ **Ice** – Deals ice damage and slows enemies with freezing effects
 
-> Additional elements are planned for future versions.
+> Additional elements may be added in future versions.
 
 ---
 
@@ -53,7 +57,7 @@ This ensures that **every combat action reflects the selected element**.
 
 ---
 
-### ⚔️ Base Physical Damage
+## ⚔️ Base Physical Damage
 
 | Attack Type      | Physical Damage |
 | ---------------- | --------------- |
@@ -64,7 +68,7 @@ This ensures that **every combat action reflects the selected element**.
 
 ---
 
-### 📊 Poison Damage Summary
+## 📊 Poison Damage Summary
 
 | Attack Type       | Poison / Tick | Duration | Total Poison Damage | Behavior |
 | ----------------- | ------------- | -------- | ------------------- | -------- |
@@ -75,7 +79,7 @@ This ensures that **every combat action reflects the selected element**.
 
 ---
 
-### ☠️ Applied Effects
+## ☠️ Applied Effects
 
 * `Poison_Daggers_Hit` – Normal swings and stabs
 * `Poison_Daggers_Charged` – Successful charged attack
@@ -84,7 +88,7 @@ This ensures that **every combat action reflects the selected element**.
 
 ---
 
-### 🎨 Visual Effects
+## 🎨 Visual Effects
 
 * Idle poison particle effects
 * Green energy weapon trail (*BlendAdd*)
@@ -101,7 +105,7 @@ This ensures that **every combat action reflects the selected element**.
 
 ---
 
-### ⚔️ Base Damage
+## ⚔️ Base Damage
 
 | Attack Type      | Damage Type | Damage    |
 | ---------------- | ----------- | --------- |
@@ -112,7 +116,7 @@ This ensures that **every combat action reflects the selected element**.
 
 ---
 
-### 🔥 Burn Damage Summary
+## 🔥 Burn Damage Summary
 
 | Attack Type   | Fire / Tick | Tick Rate | Duration | Total Fire Damage | Behavior |
 | ------------- | ----------- | --------- | -------- | ----------------- | -------- |
@@ -125,7 +129,7 @@ This ensures that **every combat action reflects the selected element**.
 
 ---
 
-### 🔥 Applied Burn Effects
+## 🔥 Applied Burn Effects
 
 * `Flame_Staff_Burn_Hit` – Normal swings and stab attacks
 * `Flame_Staff_Burn_Charged_Slash` – Charged sweep attack
@@ -134,7 +138,7 @@ This ensures that **every combat action reflects the selected element**.
 
 ---
 
-### 🎨 Visual & Feedback Effects
+## 🎨 Visual & Feedback Effects
 
 * Fire screen overlay on affected targets
 * Red-orange entity tint while burning
@@ -145,11 +149,71 @@ This ensures that **every combat action reflects the selected element**.
 
 ---
 
+# ❄️ Ice Dagger – Technical Details
+
+**Quality:** Epic
+**Item Level:** 35
+**Max Durability:** 150
+**Durability loss per hit:** 0.1
+
+---
+
+## ⚔️ Base Physical Damage
+
+| Attack Type      | Physical Damage |
+| ---------------- | --------------- |
+| Normal Swing     | 2               |
+| Stab             | 6 – 8           |
+| Pounce (Charged) | 29.5 – 37       |
+| Razorstrike      | 17.5 – 26       |
+
+---
+
+## ❄️ Ice Damage Summary
+
+| Attack Type     | Ice Damage | Cooldown | Duration | Behavior |
+| --------------- | ---------- | -------- | -------- | -------- |
+| Normal / Stab   | 25         | 6s       | 5s       | Extend   |
+| Charged Attacks | 35         | 6s       | 5s       | Extend   |
+| Razorstrike     | 15 – 25    | 6s       | 5s       | Extend   |
+
+> Ice effects **slow enemies**, apply freezing visuals, and deal **absolute ice damage**.
+
+---
+
+## ❄️ Applied Ice Effects
+
+* `Ice_Daggers_Hit` – Normal swings and stabs
+* `Ice_Daggers_Charged` – Charged attacks
+* `Ice_Daggers_Special` – Razorstrike ability
+
+---
+
+## 🧊 Crowd Control & Debuff Effects
+
+* Movement slowdown (`HorizontalSpeedMultiplier`)
+* Freeze visual VFX (`ModelVFXId: Freeze`)
+* Hurt animation feedback
+* Ice impact explosions
+* Snow & frost particles
+* Absolute ice damage type
+* Duration stacking via **Extend**
+
+---
+
+## 🎨 Visual & Feedback Effects
+
+* Frost weapon trail (**Medium_Frost**)
+* Ice burst hit particles
+* Snow impact & explosion effects
+* Subtle blue glow light on dagger
+* Frozen enemy VFX overlay
+
+---
+
 ## 🛠️ Crafting Recipes
 
-### ☠️ Poison Dagger
-
-**Weapon Bench:** Tier 2
+### ☠️ Poison Dagger — Weapon Bench Tier 2
 
 * Thorium Bar ×3
 * Venom Sac ×15
@@ -159,14 +223,21 @@ This ensures that **every combat action reflects the selected element**.
 
 ---
 
-### 🔥 Flame Dagger
-
-**Weapon Bench:** Tier 2
+### 🔥 Flame Dagger — Weapon Bench Tier 2
 
 * Adamantite Bar ×3
 * Ruby Gem ×5
 * Fire Essence ×15
 * Fire Trunk ×2
+
+---
+
+### ❄️ Ice Dagger — Weapon Bench Tier 2
+
+* Cobalt Bar ×3
+* Ice Essence ×15
+* Ice Trunk ×2
+* Diamond Gem ×1
 
 ---
 
@@ -189,8 +260,9 @@ This ensures that **every combat action reflects the selected element**.
 
 * [x] Poison elemental dagger
 * [x] Flame elemental dagger
-* [ ] Ice daggers
+* [x] Ice elemental dagger
 * [ ] Elemental balance pass
+* [ ] More elemental expansions
 
 ---
 
@@ -223,3 +295,5 @@ Creator of *Halu’s Mod – Elemental Daggers*
 ---
 
 ⭐ If you like this mod, don’t forget to leave a star on GitHub!
+
+---
