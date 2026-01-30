@@ -27,7 +27,7 @@
     },
     "WorldParticles": [
       {
-        "SystemId": "Impact_Dagger_Stab_Ice",
+        "SystemId": "Impact_Dagger_Stab_Poison",
         "Scale": 1,
         "RotationOffset": {
           "Yaw": 180,
