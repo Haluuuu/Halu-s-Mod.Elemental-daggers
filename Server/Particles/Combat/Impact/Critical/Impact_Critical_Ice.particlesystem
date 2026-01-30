@@ -1,0 +1,21 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Impact_Critical_Flash_Ice",
+      "FixedRotation": false
+    },
+    {
+      "SpawnerId": "Impact_Critical_Sparks_Ice",
+      "StartDelay": 0.01
+    },
+    {
+      "SpawnerId": "Impact_Critical_Sparks_Ice",
+      "StartDelay": 0.01
+    },
+    {
+      "SpawnerId": "Impact_Critical_Sparks_Ice_Small",
+      "StartDelay": 0.02
+    }
+  ],
+  "IsImportant": false
+}

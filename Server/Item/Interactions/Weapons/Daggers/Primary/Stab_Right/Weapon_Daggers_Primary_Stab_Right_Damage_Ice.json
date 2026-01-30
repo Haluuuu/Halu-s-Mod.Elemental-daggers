@@ -51,7 +51,7 @@
       "DamageEffects": {
         "Knockback": {
           "Direction": {
-            "X": -1,
+            "X": 1,
             "Y": 1,
             "Z": -1
           },
@@ -60,7 +60,7 @@
         },
         "WorldParticles": [
           {
-            "SystemId": "Impact_Critical_Poison",
+            "SystemId": "Impact_Critical_Ice",
             "Scale": 1,
             "RotationOffset": {
               "Yaw": 180,

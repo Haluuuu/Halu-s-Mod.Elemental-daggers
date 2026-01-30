@@ -17,7 +17,7 @@
         "Threshold": 3.0,
         "Style": "Linear"
       },
-      "Force": 3,
+      "Force": 2,
       "VelocityType": "Set",
       "Direction": {
         "X": 0,
@@ -27,7 +27,7 @@
     },
     "WorldParticles": [
       {
-        "SystemId": "Impact_Dagger_Stab_Ice",
+        "SystemId": "Impact_Dagger_Slash_Ice",
         "Scale": 1,
         "RotationOffset": {
           "Yaw": 180,
@@ -41,7 +41,7 @@
   "EntityStatsOnHit": [
     {
       "EntityStatId": "SignatureEnergy",
-      "Amount": 2
+      "Amount": 1
     }
   ],
   "AngledDamage": [
@@ -51,7 +51,7 @@
       "DamageEffects": {
         "Knockback": {
           "Direction": {
-            "X": -1,
+            "X": 0,
             "Y": 1,
             "Z": -1
           },
@@ -60,7 +60,7 @@
         },
         "WorldParticles": [
           {
-            "SystemId": "Impact_Critical_Poison",
+            "SystemId": "Impact_Critical_Ice",
             "Scale": 1,
             "RotationOffset": {
               "Yaw": 180,
@@ -69,8 +69,8 @@
             }
           }
         ],
-        "WorldSoundEventId": "SFX_Daggers_T2_Stab_Impact",
-        "LocalSoundEventId": "SFX_Daggers_T2_Stab_Impact"
+        "WorldSoundEventId": "SFX_Daggers_T2_Slash_Impact",
+        "LocalSoundEventId": "SFX_Daggers_T2_Slash_Impact"
       }
     }
   ]

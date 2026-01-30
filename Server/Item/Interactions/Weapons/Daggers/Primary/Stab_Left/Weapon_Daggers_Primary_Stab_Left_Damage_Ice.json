@@ -60,7 +60,7 @@
         },
         "WorldParticles": [
           {
-            "SystemId": "Impact_Critical_Poison",
+            "SystemId": "Impact_Critical_Ice",
             "Scale": 1,
             "RotationOffset": {
               "Yaw": 180,
