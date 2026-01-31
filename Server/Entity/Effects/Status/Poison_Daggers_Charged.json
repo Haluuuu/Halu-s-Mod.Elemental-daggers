@@ -9,7 +9,8 @@
       {
         "SystemId": "Effect_Poison"
       }
-    ]
+    ],
+        "ModelVFXId": "Poison"
   },
   "DamageCalculatorCooldown": 3,
   "DamageCalculator": {

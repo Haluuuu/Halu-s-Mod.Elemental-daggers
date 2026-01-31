@@ -17,7 +17,7 @@
           "Parent": "Weapon_Daggers_Primary_Swing_Left_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
-              "Fire": 2
+              "Fire": 3
             }
           },
           "DamageEffects": {
@@ -38,7 +38,7 @@
           "Parent": "Weapon_Daggers_Primary_Swing_Right_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 2
+              "Physical": 3
             }
           },
           "DamageEffects": {
@@ -59,7 +59,7 @@
           "Parent": "Weapon_Daggers_Primary_Swing_Right_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 6
+              "Physical": 8
             }
           },
           "DamageEffects": {
@@ -80,7 +80,7 @@
           "Parent": "Weapon_Daggers_Primary_Swing_Right_Damage_Flame",
           "DamageCalculator": {
             "BaseDamage": {
-              "Physical": 8
+              "Physical": 10
             }
           },
           "DamageEffects": {
